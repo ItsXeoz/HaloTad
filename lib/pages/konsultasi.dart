@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halotad/pages/profil.dart';
 
 void main() {
   runApp(MyApp());
@@ -85,6 +86,7 @@ class KonsultasiScreen extends StatelessWidget {
               SizedBox(height: 16),
               TextButton(
                 onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen()));
                   // Aksi saat tombol Skip ditekan
                 },
                 child: Text(
